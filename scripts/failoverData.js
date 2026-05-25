@@ -1,0 +1,1 @@
+//kill mongod (mongod --port 27017 )
