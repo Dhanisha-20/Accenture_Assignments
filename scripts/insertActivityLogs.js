@@ -1,26 +1,25 @@
-use ("ottDB") ;
+use ("socialMediaDB");
 
 db.activity_logs.insertMany([
-  {
-    logId: "L101",
-    userId: "U101",
-    action: "Login",
-    device: "Mobile",
-    timestamp: new Date()
-  },
-  {
-    logId: "L102",
-    userId: "U102",
-    action: "Watch",
-    device: "Smart TV",
-    timestamp: new Date()
-  },
-  {
-    logId: "L103",
-    userId: "U103",
-    action: "Logout",
-    device: "Laptop",
-    timestamp: new Date()
-  }
-]);
-print("Activity Logs Inserted Successfully");
+{
+  activityId: "A101",
+  userId: "U101",
+  activityType: "Login",
+  device: "Mobile",
+  activityTime: new Date()
+},
+{
+  activityId: "A102",
+  userId: "U102",
+  activityType: "Post",
+  device: "Laptop",
+  activityTime: new Date()
+},
+{
+  activityId: "A103",
+  userId: "U103",
+  activityType: "Like",
+  device: "Tablet",
+  activityTime: new Date()
+}
+])
